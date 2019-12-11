@@ -36,6 +36,21 @@ p {
     text-align: center;
 }
 
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #f4f4f4;
+}
+
+.bg-primary {
+    background: #93cb52;
+    color: #fff;
+}
+
 .big-head {
     font-size: 4rem;
     margin-bottom: 0.75rem;
@@ -57,6 +72,8 @@ p {
 .pady-2 { padding: 2rem 0; }
 .pady-3 { padding: 3rem 0; }
 
+.pad-2 { padding: 2rem; }
+
 .btn {
     display: inline-block;
     color: #fff;
@@ -73,6 +90,16 @@ p {
 .btn-dark {
     background: #333;
     color: #fff;
+}
+
+.list {
+    margin 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
 }
 
 /* Navbar */
@@ -128,3 +155,74 @@ p {
     left: 0;
     background-color: rgba(0,0,0,0.4)
 }
+
+/* Section: What We Do */
+
+#what .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#what .items .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i {
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Section: Who We Are */
+
+#who {
+    display: flex;
+}
+
+#who div {
+    flex: 1;
+}
+
+#who .who-img {
+    background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+/* Section:Clients */
+
+#clients .items {
+    display: flex;
+}
+
+#clients .items img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+/* Section: Contact */
+
+#contact {
+    display: flex;
+}
+
+#contact .map, 
+#contact .contact-form {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+} 
+
+#contact .contact-form input, 
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+} 
